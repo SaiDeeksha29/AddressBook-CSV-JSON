@@ -20,7 +20,7 @@ public class AddressBookCSV {
 		AddressBookCSV addressBookCSV = new AddressBookCSV();
 		try {
 			addressBookCSV.writeCSVData();
-			addressBookCSV.readCSVData();	
+			addressBookCSV.readCSVData();
 		} catch (IOException e) {
 			System.out.println("Exception is - " + e);
 		}
@@ -47,14 +47,14 @@ public class AddressBookCSV {
 				CSVReader csvReader = new CSVReader(reader);) {
 			String[] nextRecord;
 			while ((nextRecord = csvReader.readNext()) != null) {
-				System.out.println("First Name - " + nextRecord[0]);
-				System.out.println("Last Name - " + nextRecord[1]);
-				System.out.println("Address - " + nextRecord[2]);
-				System.out.println("City - " + nextRecord[3]);
-				System.out.println("State - " + nextRecord[4]);
-				System.out.println("Zip - " + nextRecord[5]);
-				System.out.println("Phone Number - " + nextRecord[6]);
-				System.out.println("Email - " + nextRecord[7]);
+				System.out.println("Address - " + nextRecord[0]);
+				System.out.println("City - " + nextRecord[1]);
+				System.out.println("Email - " + nextRecord[2]);
+				System.out.println("First Name - " + nextRecord[3]);
+				System.out.println("Last Name - " + nextRecord[4]);
+				System.out.println("Phone - " + nextRecord[5]);
+				System.out.println("State - " + nextRecord[6]);
+				System.out.println("Zip - " + nextRecord[7]);
 			}
 		}
 	}
