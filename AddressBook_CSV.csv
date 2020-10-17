@@ -1,2 +1,3 @@
-Monica, Geller, Manhattan, NYC, New York, 500001, 675341929, monica@gmail.com
-Joey, Tribbiani, Nationwide, Dallas, Texas, 200009, 678345216, josephtribbiani@gmail.com
+"ADDRESS","CITY","EMAIL","FIRSTNAME","LASTNAME","PHONE","STATE","ZIP"
+"Nationwide","Dallas","josephtribbiani@gmail.com","Joey","Tribbiani","678345216","Texas","200009"
+"Manhattan","NYC","monica@gmail.com","Monica","Geller","675341929","New York","500001"
