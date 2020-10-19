@@ -24,8 +24,7 @@ public class AddressBookJSON {
 		List<Contact> personsList = new ArrayList<Contact>();
 		try {
 			Reader reader = Files.newBufferedReader(Paths.get(ADDRESSBOOK_JSON_FILE));
-			personsList.addAll(Arrays.asList(new Gson().fromJson(reader, Contact[].class)));
-			System.out.println(personsList);
+			System.out.println(personsList.addAll(Arrays.asList(new Gson().fromJson(reader, Contact[].class))));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -35,12 +34,12 @@ public class AddressBookJSON {
 	// writing data into file
 	private void writeDataJson() throws IOException {
 		Writer writer = Files.newBufferedWriter(Paths.get(ADDRESSBOOK_JSON_FILE));
-		List<Contact> personsList = new ArrayList<>();
-		personsList.add(
+		List<Contact> contactList = new ArrayList<>();
+		contactList.add(
 				new Contact("Monica", "Geller", "Manhattan", "NYC", "New York", 500001, 675341929, "monica@gmail.com"));
-		personsList.add(new Contact("Joey", "Tribbiani", "Nationwide", "Dallas", "Texas", 200009, 678345216,
+		contactList.add(new Contact("Joey", "Tribbiani", "Nationwide", "Dallas", "Texas", 200009, 678345216,
 				"josephtribbiani@gmail.com"));
-		new Gson().toJson(personsList, writer);
+		new Gson().toJson(contactList, writer);
 		writer.close();
 	}
 
